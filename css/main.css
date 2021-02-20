@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+  --primary: #000C60;
+  --hover: #446cda;
+  --light: #EEEEEE;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", sans-serif !important;
+    font-size: large;
+    background-image: url('/images/bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{ background:var(--primary);
+padding: 15px 10px;}
+
+.nav-link , .navbar-brand{ color: var(--light); cursor: pointer;}
+
+.nav-link{ 
+    text-align: center;
+    margin-right: 1em !important;
+}
+
+.nav-link:hover{ 
+    color: var(--light);
+}
+
+.zoom {
+    transition: transform .2s; /* Animation */
+}
+  
+.zoom:hover {
+    transform: scale(1.2);
+}
+
+.navbar-collapse{ justify-content: flex-end;}
+
+.navbar-nav > li{
+    padding-left:30px;
+    padding-right:30px;
+  }
+
+.container-fluid {
+    height: 90vh;
+}
+
+.description h1 {
+    color: var(--light);
+    font-size: 2em;
+    font-weight: bold;
+}
+.description p {
+    color:var(--light);
+    font-size: 1.1rem;
+    font-weight: light;
+}
+.button {
+    font-size: medium;
+    border-color: var(--primary);
+    background:var(--light);
+    color: #000;
+    border-radius: 20px;
+}
+
+.button2 {
+    font-size: medium;
+    border-color: var(--primary);
+    background:var(--light);
+    color: #000;
+    border-radius: 20px;
+    width: 100%;
+}
+
+.button:hover, .button2:hover {
+    font-size: medium;
+    border-color: var(--light);
+    background:var(--hover);
+    color: var(--light);
+    border-radius: 20px;
+    transition: all .25s;
+}
+
+
+#hidden {
+    display: none;
+}
+
+#left {
+    margin-top: 20%;
+}
+
+#right {
+    margin-top: 5%;
+}
+
+@media (min-width: 576px) {  
+ 
+}
+ 
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (max-width: 768px) {  
+    .col-sm-12{
+        width: 100%;
+    };
+}
+ 
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 991px) { 
+    #shown {
+        display: none;
+    }
+    #hidden {
+        display: block;
+    }
+    #left{
+        margin: 0;
+    }
+}
+ 
+/* Extra large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) {  
+
+}
