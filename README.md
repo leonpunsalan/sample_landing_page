@@ -1,2 +1,2 @@
 # Sample Landing Page
-This was inspired by a friend's Landing Page UI Mockup. Original design by J. Doloso.
+This was inspired by a friend's Landing Page Mockup. Original design by J. Doloso.
